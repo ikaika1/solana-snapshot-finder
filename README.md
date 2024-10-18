@@ -97,7 +97,8 @@ sudo docker run -it --rm \
 -v ~/solana/validator-ledger:/solana/snapshot \
 --user $(id -u):$(id -g) \
 c29r3/solana-snapshot-finder:latest \
---snapshot_path /solana/snapshot
+--version 1.18.25 \
+--snapshot_path /mnt/ledger
 ```
 *`~/solana/validator-ledger` - path to validator-ledger, where snapshots stored*
 
